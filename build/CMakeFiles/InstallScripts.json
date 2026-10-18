@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/admin/Projects/candy_distribution/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
