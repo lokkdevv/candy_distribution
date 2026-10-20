@@ -59,8 +59,6 @@ candy
  /usr/lib64/crt1.o
  /usr/lib64/crti.o
  /usr/lib64/crtn.o
- /usr/lib64/libc.so
- /usr/lib64/libraylib.so
  /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o
  /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o
  /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so
@@ -69,7 +67,9 @@ candy
  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so
  /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so
  /usr/lib64/libatomic.so.1.2.0
+ /usr/lib64/libc.so
  /usr/lib64/libc_nonshared.a
  /usr/lib64/libm.so.6
+ /usr/lib64/libraylib.so
  /home/admin/Projects/candy_distribution/build/CMakeFiles/candy.dir/src/main.c.o
 

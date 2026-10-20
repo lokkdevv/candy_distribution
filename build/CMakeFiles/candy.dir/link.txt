@@ -1,1 +1,1 @@
-/usr/bin/cc -Wl,--dependency-file=CMakeFiles/candy.dir/link.d CMakeFiles/candy.dir/src/main.c.o -o candy  -lraylib
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/candy.dir/link.d CMakeFiles/candy.dir/src/main.c.o -o candy  /usr/lib64/libraylib.so -L/usr/lib64 -lraylib

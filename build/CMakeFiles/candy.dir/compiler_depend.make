@@ -57,8 +57,6 @@ candy: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib64/crt1.o \
   /usr/lib64/crti.o \
   /usr/lib64/crtn.o \
-  /usr/lib64/libc.so \
-  /usr/lib64/libraylib.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so \
@@ -67,10 +65,14 @@ candy: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so \
   /usr/lib64/libatomic.so.1.2.0 \
+  /usr/lib64/libc.so \
   /usr/lib64/libc_nonshared.a \
   /usr/lib64/libm.so.6 \
+  /usr/lib64/libraylib.so \
   CMakeFiles/candy.dir/src/main.c.o
 
+
+/usr/lib64/libraylib.so:
 
 /usr/lib64/libm.so.6:
 
@@ -80,23 +82,25 @@ candy: /lib64/ld-linux-x86-64.so.2 \
 
 /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so:
-
 /usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/types/clock_t.h:
 
 /usr/include/bits/types.h:
 
-/usr/lib64/libraylib.so:
-
 /usr/include/sys/cdefs.h:
+
+/usr/lib64/libc.so:
+
+/usr/include/bits/time64.h:
 
 /usr/include/bits/byteswap.h:
 
 /lib64/libc.so.6:
 
 /usr/include/bits/types/struct_timespec.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic_asneeded.so:
 
 /usr/include/bits/thread-shared-types.h:
 
@@ -119,10 +123,6 @@ candy: /lib64/ld-linux-x86-64.so.2 \
 /usr/include/bits/endian.h:
 
 /usr/include/bits/waitflags.h:
-
-/usr/include/bits/time64.h:
-
-/usr/lib64/libc.so:
 
 /usr/include/alloca.h:
 
@@ -192,10 +192,6 @@ CMakeFiles/candy.dir/src/main.c.o:
 
 /lib64/ld-linux-x86-64.so.2:
 
-/usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so:
-
-/usr/include/sys/select.h:
-
 /usr/include/sys/types.h:
 
 /lib64/libgcc_s.so.1:
@@ -207,3 +203,7 @@ CMakeFiles/candy.dir/src/main.c.o:
 /usr/lib64/crti.o:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o:
+
+/usr/include/sys/select.h:
+
+/usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so:

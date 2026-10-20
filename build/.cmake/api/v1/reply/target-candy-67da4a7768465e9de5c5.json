@@ -11,11 +11,14 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"set_target_properties",
+			"find_package"
 		],
 		"files" : 
 		[
-			"CMakeLists.txt"
+			"CMakeLists.txt",
+			"/usr/lib64/cmake/raylib/raylib-config.cmake"
 		],
 		"nodes" : 
 		[
@@ -25,14 +28,30 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 17,
 				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 63,
+				"parent" : 4
 			}
 		]
 	},
@@ -41,9 +60,23 @@
 		"major" : 2,
 		"minor" : 10
 	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "raylib::@6890427a1f51a3e7e1df"
+		}
+	],
 	"compileGroups" : 
 	[
 		{
+			"compileCommandFragments" : 
+			[
+				{
+					"backtrace" : 2,
+					"fragment" : "-I/usr/include"
+				}
+			],
 			"language" : "C",
 			"sourceIndexes" : 
 			[
@@ -58,7 +91,12 @@
 		[
 			{
 				"backtrace" : 2,
-				"fragment" : "-lraylib",
+				"fragment" : "/usr/lib64/libraylib.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "-L/usr/lib64 -lraylib",
 				"role" : "libraries"
 			}
 		],
@@ -68,7 +106,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"fragment" : "raylib"
+			"id" : "raylib::@6890427a1f51a3e7e1df"
 		}
 	],
 	"name" : "candy",

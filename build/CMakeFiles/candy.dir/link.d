@@ -3,7 +3,8 @@ candy: \
   /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o \
   CMakeFiles/candy.dir/src/main.c.o \
-  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libraylib.so \
+  /usr/lib64/libraylib.so \
+  /usr/lib64/libraylib.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a \
   /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/libgcc_s_asneeded.so \
@@ -20,9 +21,9 @@ candy: \
   /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so \
   /usr/lib/gcc/x86_64-redhat-linux/16/libatomic.so \
   /usr/lib64/libatomic.so.1.2.0 \
-  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so \
-  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so \
-  /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so \
+  /usr/lib64/libc.so \
+  /usr/lib64/libc.so \
+  /usr/lib64/libc.so \
   /lib64/libc.so.6 \
   /usr/lib64/libc_nonshared.a \
   /lib64/ld-linux-x86-64.so.2 \
@@ -48,7 +49,9 @@ candy: \
 
 CMakeFiles/candy.dir/src/main.c.o:
 
-/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libraylib.so:
+/usr/lib64/libraylib.so:
+
+/usr/lib64/libraylib.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/libgcc.a:
 
@@ -82,11 +85,11 @@ CMakeFiles/candy.dir/src/main.c.o:
 
 /usr/lib64/libatomic.so.1.2.0:
 
-/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so:
+/usr/lib64/libc.so:
 
-/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so:
+/usr/lib64/libc.so:
 
-/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/libc.so:
+/usr/lib64/libc.so:
 
 /lib64/libc.so.6:
 

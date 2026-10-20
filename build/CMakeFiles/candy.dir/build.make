@@ -96,6 +96,7 @@ candy_EXTERNAL_OBJECTS =
 candy: CMakeFiles/candy.dir/src/main.c.o
 candy: CMakeFiles/candy.dir/build.make
 candy: CMakeFiles/candy.dir/compiler_depend.ts
+candy: /usr/lib64/libraylib.so
 candy: CMakeFiles/candy.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/admin/Projects/candy_distribution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable candy"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/candy.dir/link.txt --verbose=$(VERBOSE)
