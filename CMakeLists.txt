@@ -2,7 +2,7 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
 
 project(candy LANGUAGES C)
 
-find_package(raylib)
+find_package(raylib QUIET)
 if(NOT raylib_FOUND)
     message(STATUS "WARNING: raylib was not found in the system; it will be downloaded")
     include(FetchContent)
