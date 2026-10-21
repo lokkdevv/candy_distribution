@@ -12,10 +12,15 @@ Your movement is limited to drag and pull.
 ```bash
 cmake --version
 ```
-* Raylib is required to build the project if it isn't already installed in your system, CMake will automatically install and compile it for you. To build the project run CMake in the parent directory as shown:
+* Raylib is required to build and compile this project, if you have raylib installed in your system run the following:
 ```bash
 cmake -S . -B build
 ```
+* If raylib is not installed in your system, run the following command to automaticallt download and compile raylib for the project:
+```bash
+cmake -S . -B build -DFETCH_RAYLIB=ON
+```
+
 * After successfully building, you can find the executable inside the build folder labeled "build", you can run it in your file manager or by running the following in your terminal while in the parent directory:
 ```bash
 ./build/candy

@@ -2,14 +2,20 @@ CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
 
 project(candy LANGUAGES C)
 
+option(FETCH_RAYLIB "download and compile raylib for use in this project" OFF)
+
 find_package(raylib QUIET)
 if(NOT raylib_FOUND)
-    message(STATUS "WARNING: raylib was not found in the system; it will be downloaded")
+    message(WARNING "WARNING: Raylib was not found in the system")
+    message(FATAL_ERROR "INFO: Run cmake with the option -DFETCH_RAYLIB=ON to auto install raylib")
+else()
+    message(STATUS "SUCCESS: Found raylib in system")
+endif()
+
+if(FETCH_RAYLIB)
     include(FetchContent)
     FetchContent_Declare(raylib https://github.com/raysan5/raylib/archive/refs/tags/6.2.zip)
     FetchContent_MakeAvailable(raylib)
-else()
-    message(STATUS "SUCCESS: found raylib in system")
 endif()
 
 add_executable(${PROJECT_NAME} src/main.c)
