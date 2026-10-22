@@ -1,3 +1,0 @@
-/home/admin/Projects/candy_distribution/build/CMakeFiles/candy.dir
-/home/admin/Projects/candy_distribution/build/CMakeFiles/edit_cache.dir
-/home/admin/Projects/candy_distribution/build/CMakeFiles/rebuild_cache.dir

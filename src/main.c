@@ -19,6 +19,8 @@ typedef struct{
 int main()
 {
     InitWindow(windowWidth, windowHeight, "Candy Distribution");
+    SetWindowState(FLAG_WINDOW_RESIZABLE);
+    SetTargetFPS(60);
 
     hand hand = {};
     body body = {};

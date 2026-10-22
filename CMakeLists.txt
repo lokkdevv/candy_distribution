@@ -4,6 +4,14 @@ project(candy LANGUAGES C)
 
 option(FETCH_RAYLIB "download and compile raylib for use in this project" OFF)
 
+if(FETCH_RAYLIB)
+    include(FetchContent)
+    FetchContent_Declare(raylib
+        URL https://github.com/raysan5/raylib/archive/refs/tags/6.2.zip
+        DOWNLOAD_EXTRACT_TIMESTAMP ON
+    )
+    FetchContent_MakeAvailable(raylib)
+else()
 find_package(raylib QUIET)
 if(NOT raylib_FOUND)
     message(WARNING "WARNING: Raylib was not found in the system")
@@ -11,11 +19,10 @@ if(NOT raylib_FOUND)
 else()
     message(STATUS "SUCCESS: Found raylib in system")
 endif()
+endif()
 
-if(FETCH_RAYLIB)
-    include(FetchContent)
-    FetchContent_Declare(raylib https://github.com/raysan5/raylib/archive/refs/tags/6.2.zip)
-    FetchContent_MakeAvailable(raylib)
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the build type" Force)
 endif()
 
 add_executable(${PROJECT_NAME} src/main.c)
